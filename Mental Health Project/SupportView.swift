@@ -10,24 +10,30 @@ import SwiftUI
 text("Delete this")
 
 struct SupportView: View {
+    @State var phoneNum : String = ""
+    @State var message : String = ""
     var body: some View {
         VStack {
+            Text("hi")
             Text("Support")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(Color("AccentColor"))
                 .padding(.all)
-            Text("HI")
-            Button(action: {
+            Button(action: { phoneNum = "741741" ; message = "REASON";
                 sendMessage()
                     }, label: {
-                        Text("send message")
+                        Text("Crisis Text Line")
+                            .font(.title)
+                    })
+            Button(action: {phoneNum = "62640";  message = "HELPLINE" ;              sendMessage()                   }, label: {
+                        Text("National Alliance on Mental Illness")
                             .font(.title)
                     })
         }
     }
     func sendMessage(){
-            let sms: String = "sms:\(phoneNum)&body="
+            let sms: String = "sms:\(phoneNum)&body=\(message)"
             let strURL : String = sms.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
             UIApplication.shared.open(URL.init(string:strURL)!, options: [:], completionHandler: nil)
         }
