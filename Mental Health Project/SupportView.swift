@@ -12,7 +12,7 @@ struct SupportView: View {
     @State var message : String = ""
     var body: some View {
         VStack {
-            
+            Text("hi")
             Text("Support")
                 .font(.title)
                 .fontWeight(.bold)
