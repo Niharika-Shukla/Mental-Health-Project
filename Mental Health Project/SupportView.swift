@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SupportView: View {
-    @State var phoneNum : String
-    @State var message : String
+    @State var phoneNum : String = ""
+    @State var message : String = ""
     var body: some View {
         VStack {
             Text("Support")
@@ -17,35 +17,20 @@ struct SupportView: View {
                 .fontWeight(.bold)
                 .foregroundColor(Color("AccentColor"))
                 .padding(.all)
-            Text("HI")
-            Button(action: {
-                sendMessage(); phoneNum = "741741"; message = "REASON"
+            Button(action: { phoneNum = "741741" ; message = "REASON";
+                sendMessage()
                     }, label: {
                         Text("Crisis Text Line")
                             .font(.title)
                     })
-            Button(action: {
-                sendMessage() ;phoneNum = "62640"; message = "HELPLINE"
-                    }, label: {
-                        Text("National Alliance on Mental Health")
-                            .font(.title)
-                    })
-            Button(action: {
-                sendMessage()
-                    }, label: {
-                        Text("send message")
-                            .font(.title)
-                    })
-            Button(action: {
-                sendMessage()
-                    }, label: {
-                        Text("send message")
+            Button(action: {phoneNum = "62640";  message = "HELPLINE" ;              sendMessage()                   }, label: {
+                        Text("National Alliance on Mental Illness")
                             .font(.title)
                     })
         }
     }
     func sendMessage(){
-            let sms: String = "sms:\(phoneNum)&\(message)="
+            let sms: String = "sms:\(phoneNum)&body=\(message)"
             let strURL : String = sms.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
             UIApplication.shared.open(URL.init(string:strURL)!, options: [:], completionHandler: nil)
         }
