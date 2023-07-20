@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+text("Delete this")
+
 struct SupportView: View {
     var body: some View {
         VStack {
