@@ -10,17 +10,38 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Welcome, world!")
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                            .tag(1)
+                    }
+                ResourcesView()
+                    .tabItem {
+                        Label("Resources", systemImage: "note.text")
+                            .tag(2)
+                    }
+                
+                AdvocacyView()
+                    .tabItem {
+                        Label("Advocacy", systemImage: "map")
+                            .tag(3)
+                    }
+                
+                SupportView()
+                    .tabItem {
+                        Label("Support", systemImage: "calendar")
+                            .tag(4)
+                    }
+                
+                    .navigationViewStyle(.stack)
+            }
         }
-        .padding()
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
