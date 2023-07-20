@@ -16,13 +16,23 @@ struct SupportView: View {
                 .foregroundColor(Color("AccentColor"))
                 .padding(.all)
             Text("HI")
-
-            }
+            Button(action: {
+                sendMessage()
+                    }, label: {
+                        Text("send message")
+                            .font(.title)
+                    })
+        }
     }
-}
-
-struct SupportView_Previews: PreviewProvider {
-    static var previews: some View {
-        SupportView()
+    func sendMessage(){
+            let sms: String = "sms:\(phoneNum)&body="
+            let strURL : String = sms.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+            UIApplication.shared.open(URL.init(string:strURL)!, options: [:], completionHandler: nil)
+        }
+    
+    struct SupportView_Previews: PreviewProvider {
+        static var previews: some View {
+            SupportView()
+        }
     }
 }
