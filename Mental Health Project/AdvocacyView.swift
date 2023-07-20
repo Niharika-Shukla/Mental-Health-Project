@@ -13,6 +13,7 @@ struct AdvocacyView: View {
         Text("Advocacy")
                 .font(.title)
                 .fontWeight(.bold)
+                .foregroundColor(Color("AccentColor"))
         }
     }
 }

@@ -13,6 +13,7 @@ struct SupportView: View {
             Text("Support")
                 .font(.title)
                 .fontWeight(.bold)
+                .foregroundColor(Color("AccentColor"))
                 .padding(.all)
             Text("HI")
 
