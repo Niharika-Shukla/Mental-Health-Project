@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SupportView: View {
+    @State var phoneNum : String
+    @State var message : String
     var body: some View {
         VStack {
             Text("Support")
@@ -17,6 +19,24 @@ struct SupportView: View {
                 .padding(.all)
             Text("HI")
             Button(action: {
+                sendMessage(); phoneNum = "741741"; message = "REASON"
+                    }, label: {
+                        Text("Crisis Text Line")
+                            .font(.title)
+                    })
+            Button(action: {
+                sendMessage() ;phoneNum = "62640"; message = "HELPLINE"
+                    }, label: {
+                        Text("National Alliance on Mental Health")
+                            .font(.title)
+                    })
+            Button(action: {
+                sendMessage()
+                    }, label: {
+                        Text("send message")
+                            .font(.title)
+                    })
+            Button(action: {
                 sendMessage()
                     }, label: {
                         Text("send message")
@@ -25,7 +45,7 @@ struct SupportView: View {
         }
     }
     func sendMessage(){
-            let sms: String = "sms:\(phoneNum)&body="
+            let sms: String = "sms:\(phoneNum)&\(message)="
             let strURL : String = sms.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
             UIApplication.shared.open(URL.init(string:strURL)!, options: [:], completionHandler: nil)
         }
