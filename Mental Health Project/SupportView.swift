@@ -17,7 +17,6 @@ struct SupportView: View {
                 .fontWeight(.bold)
                 .foregroundColor(Color("AccentColor"))
                 .padding(.all)
-            Text("Hi")
             Button(action: { phoneNum = "741741" ; message = "REASON";
                 sendMessage()
                     }, label: {
