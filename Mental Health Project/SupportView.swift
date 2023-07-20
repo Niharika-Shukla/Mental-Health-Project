@@ -6,10 +6,6 @@
 //
 
 import SwiftUI
-
-text("Delete this")
-text("Hii")
-
 struct SupportView: View {
     @State var phoneNum : String = ""
     @State var message : String = ""
