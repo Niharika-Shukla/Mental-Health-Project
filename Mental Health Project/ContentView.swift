@@ -18,19 +18,19 @@ struct ContentView: View {
                     }
                 ResourcesView()
                     .tabItem {
-                        Label("Resources", systemImage: "note.text")
+                        Label("Resources", systemImage: "book.fill")
                             .tag(2)
                     }
                 
                 AdvocacyView()
                     .tabItem {
-                        Label("Advocacy", systemImage: "map")
+                        Label("Advocacy", systemImage: "megaphone.fill")
                             .tag(3)
                     }
                 
                 SupportView()
                     .tabItem {
-                        Label("Support", systemImage: "calendar")
+                        Label("Support", systemImage: "phone.fill")
                             .tag(4)
                     }
                 

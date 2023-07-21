@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		848666AC2A697872006A101B /* Mental Health Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mental Health Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		848666AC2A697872006A101B /* Mind Power.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mind Power.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848666AF2A697872006A101B /* Mental_Health_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mental_Health_ProjectApp.swift; sourceTree = "<group>"; };
 		848666B12A697872006A101B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		848666B32A697874006A101B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Mental Health Project/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
@@ -51,7 +51,7 @@
 		848666AD2A697872006A101B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				848666AC2A697872006A101B /* Mental Health Project.app */,
+				848666AC2A697872006A101B /* Mind Power.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 			);
 			name = "Mental Health Project";
 			productName = "Mental Health Project";
-			productReference = 848666AC2A697872006A101B /* Mental Health Project.app */;
+			productReference = 848666AC2A697872006A101B /* Mind Power.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -297,7 +297,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Niharika-Shukla.Mental-Health-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mind Power";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,7 +326,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Niharika-Shukla.Mental-Health-Project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Mind Power";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

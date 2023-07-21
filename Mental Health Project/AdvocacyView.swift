@@ -24,25 +24,25 @@ struct AdvocacyView: View {
             ScrollView {
                 HStack {
                     VStack {
-                        Link(destination: URL(string: "https://www.psychiatry.org/patients-families/depression/what-is-depression")!) {
-                            Image( "8")
+                        Link(destination: URL(string: "https://www.house.gov/representatives/find-your-representative")!) {
+                            Image( "1 Advocacy")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all)
                                 .font(.largeTitle)
                         }
-                        Text("Depression")
+                        Text("Find Your Legislator")
                     }
                     
                     VStack {
-                        Link(destination: URL(string: "https://www.nimh.nih.gov/health/topics/anxiety-disorders")!) {
-                            Image( "2")
+                        Link(destination: URL(string: "https://education-consumers.org/pdf/RADletter.pdf")!) {
+                            Image( "2 Advocacy")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all)
                                 .font(.largeTitle)
                         }
-                        Text("Anxiety")
+                        Text("Letters to Legislators")
                     }
                     
                 }
@@ -50,69 +50,69 @@ struct AdvocacyView: View {
                 HStack {
                     
                     VStack {
-                        Link(destination: URL(string: "https://www.samhsa.gov/mental-health")!) {
-                            Image( "3")
+                        Link(destination: URL(string: "https://www.aonl.org/advocacy/engaged/communicating")!) {
+                            Image( "3 Advocacy")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all)
                                 .font(.largeTitle)
                         }
-                        Text("Symptoms & Conditions")
+                        Text("Policymaking Outreach")
                     }
                     
                     VStack {
-                        Link(destination: URL(string: "https://www.nytimes.com/guides/well/how-to-meditate")!) {
-                            Image( "4")
+                        Link(destination: URL(string: "https://ssir.org/articles/entry/eight_tips_for_communicating_ideas_to_busy_policymakers")!) {
+                            Image( "4 Advocacy")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all)
                                 .font(.largeTitle)
                         }
-                        Text("Meditation")
+                        Text("Policy for Social Change")
                     }
                 }
                 HStack {
                     VStack {
-                        Link(destination: URL(string: "https://www.apa.org/topics/trauma#:~:text=Trauma%20is%20an%20emotional%20response,symptoms%20like%20headaches%20or%20nausea.")!) {
-                            Image( "5")
+                        Link(destination: URL(string: "https://www.congress.gov/bill/116th-congress/house-bill/1109/text")!) {
+                            Image( "5 Advocacy")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all)
                                 .font(.largeTitle)
                         }
-                        Text("Trauma & PTSD")
+                        Text("HR 1109 Mental Health Bill")
                     }
                     VStack {
-                        Link(destination: URL(string: "https://www.nami.org/About-Mental-Illness/Common-with-Mental-Illness/Risk-of-Suicide")!) {
-                            Image( "6")
+                        Link(destination: URL(string: "https://www.congress.gov/bill/117th-congress/house-bill/7666")!) {
+                            Image( "6 Advocacy")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all)
                                 .font(.largeTitle)
                         }
-                        Text("Suicidal Ideation")
+                        Text("HR 7666 Wellbeing Bill")
                     }
                 }
                 HStack {
                     VStack {
-                        Link(destination: URL(string: "https://www.cdc.gov/violenceprevention/about/copingwith-stresstips.html")!) {
-                            Image( "7")
+                        Link(destination: URL(string: "https://www.congress.gov/bill/116th-congress/house-bill/3180/text")!) {
+                            Image( "7 Advocacy")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all)
                                 .font(.largeTitle)
                         }
-                        Text("Coping Strategies")
+                        Text("HR 3180 Trauma Bill")
                     }
                     VStack {
                         Link(destination: URL(string: "https://solaramentalhealth.com/importance-of-support-systems/")!) {
-                            Image( "1")
+                            Image( "8 Advocacy")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all)
                                 .font(.largeTitle)
                         }
-                        Text("Support Systems")
+                        Text("HR 3165 Parity Bill")
                     }
                 }
             }
