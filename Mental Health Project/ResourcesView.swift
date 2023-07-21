@@ -8,89 +8,118 @@
 import SwiftUI
 
 struct ResourcesView: View {
+    @Environment(\.openURL) var openURL
+
+    
     var body: some View {
+        
+        @Environment(\.openURL) var openURL
+
         VStack {
             Text("Resources")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(Color("AccentColor"))
+            Text("📚Read peer-reviewed and scientific resources on frequent mental health conditions, how to support your friends and family, and America's mental health crisis in adolescents.")
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+                .padding(.all)
             ScrollView {
                 HStack {
                     VStack {
-                        Image("1")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.horizontal)
-                            .frame(width: 200.0, height: 200.0)
-                        Text("Meditation")
+                        Link(destination: URL(string: "https://www.psychiatry.org/patients-families/depression/what-is-depression")!) {
+                            Image( "8")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                                .font(.largeTitle)
+                        }
+                        Text("Depression")
                     }
                     
                     VStack {
-                        Image("2")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.horizontal)
-                            .frame(width: 200.0, height: 200.0)
+                        Link(destination: URL(string: "https://www.nimh.nih.gov/health/topics/anxiety-disorders")!) {
+                            Image( "2")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                                .font(.largeTitle)
+                        }
                         Text("Anxiety")
                     }
                     
                 }
                 
                 HStack {
+                    
                     VStack {
-                        Image("3")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.horizontal)
-                            .frame(width: 200.0, height: 200.0)
-                        Text("Title here")
+                        Link(destination: URL(string: "https://www.samhsa.gov/mental-health")!) {
+                            Image( "3")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                                .font(.largeTitle)
+                        }
+                        Text("Symptoms & Conditions")
                     }
+                    
                     VStack {
-                        Image("4")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.horizontal)
-                            .frame(width: 200.0, height: 200.0)
-                        Text("Title here")
-                    }
-                }
-                HStack {
-                    VStack {
-                        Image("5")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.horizontal)
-                            .frame(width: 200.0, height: 200.0)
-                        Text("Title here")
-                    }
-                    VStack {
-                        Image("6")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.horizontal)
-                            .frame(width: 200.0, height: 200.0)
-                        Text("Title here")
+                        Link(destination: URL(string: "https://www.nytimes.com/guides/well/how-to-meditate")!) {
+                            Image( "4")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                                .font(.largeTitle)
+                        }
+                        Text("Meditation")
                     }
                 }
                 HStack {
                     VStack {
-                        Image("7")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.horizontal)
-                            .frame(width: 200.0, height: 200.0)
-                        Text("Title here")
+                        Link(destination: URL(string: "https://www.apa.org/topics/trauma#:~:text=Trauma%20is%20an%20emotional%20response,symptoms%20like%20headaches%20or%20nausea.")!) {
+                            Image( "5")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                                .font(.largeTitle)
+                        }
+                        Text("Trauma & PTSD")
                     }
                     VStack {
-                        Image("8")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.horizontal)
-                            .frame(width: 200.0, height: 200.0)
-                        Text("Title here")
+                        Link(destination: URL(string: "https://www.nami.org/About-Mental-Illness/Common-with-Mental-Illness/Risk-of-Suicide")!) {
+                            Image( "6")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                                .font(.largeTitle)
+                        }
+                        Text("Suicidal Ideation")
+                    }
+                }
+                HStack {
+                    VStack {
+                        Link(destination: URL(string: "https://www.cdc.gov/violenceprevention/about/copingwith-stresstips.html")!) {
+                            Image( "7")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                                .font(.largeTitle)
+                        }
+                        Text("Coping Strategies")
+                    }
+                    VStack {
+                        Link(destination: URL(string: "https://solaramentalhealth.com/importance-of-support-systems/")!) {
+                            Image( "1")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.all)
+                                .font(.largeTitle)
+                        }
+                        Text("Support Systems")
                     }
                 }
             }
+            .padding(.bottom)
         }
     }
 }

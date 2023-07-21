@@ -21,7 +21,7 @@
 		848666AC2A697872006A101B /* Mental Health Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mental Health Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848666AF2A697872006A101B /* Mental_Health_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mental_Health_ProjectApp.swift; sourceTree = "<group>"; };
 		848666B12A697872006A101B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		848666B32A697874006A101B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848666B32A697874006A101B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Mental Health Project/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		848666B62A697874006A101B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		848666BD2A6979AA006A101B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		848666BF2A6979B4006A101B /* AdvocacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvocacyView.swift; sourceTree = "<group>"; };
@@ -62,9 +62,9 @@
 				848666AF2A697872006A101B /* Mental_Health_ProjectApp.swift */,
 				848666B12A697872006A101B /* ContentView.swift */,
 				848666BD2A6979AA006A101B /* HomeView.swift */,
+				848666C32A6979C5006A101B /* ResourcesView.swift */,
 				848666BF2A6979B4006A101B /* AdvocacyView.swift */,
 				848666C12A6979BD006A101B /* SupportView.swift */,
-				848666C32A6979C5006A101B /* ResourcesView.swift */,
 				848666B32A697874006A101B /* Assets.xcassets */,
 				848666B52A697874006A101B /* Preview Content */,
 			);
@@ -283,6 +283,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mental Health Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 59FDP2968J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -311,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mental Health Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 59FDP2968J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

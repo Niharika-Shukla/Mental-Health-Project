@@ -10,14 +10,22 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         VStack {
-            Image("Image")
-            Text("ENTER APP NAME HERE")
+            Spacer()
+                .frame(height: 100.0)
+            Image("Mental Health Logo")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300.0, height: 300.0)
+            Text("Mind Power")
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(Color("AccentColor"))
                 .padding(.all)
-            Text("2-3 sentence mission statement.")
-                .padding(.bottom, 150.0)
+            Text("Fighting the mental health crisis in America through education, policy change, and direct support. Building a generation of resilient youth to understand mental health and the power of their mind. ")
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+                .padding(.all)
+            Spacer()
         }
     }
 }
